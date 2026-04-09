@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Sonoro | Manuela Posada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="header-content">
+                <div class="logo">Archivo<span>Sonoro</span></div>
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#videos">Galería</a>
+                <a href="#sonidos">Sonidos</a>
+                <a href="#contacto">Sugerir</a>
+            </nav>
+            </div>
+            <h1 id="inicio">ARCHIVO<br>SONORO</h1>
+            <p>Un archivo sonoro diseñado para capturar la esencia de la querida BogoTrash.</p>
+        </header>
+
+        <section id="videos">
+            <h2>Galeria de videos</h2>
+            <table class="video-table">
+                <tbody>
+                    <tr>
+                        <td class="video-card">
+                            <div class="thumb-container" onclick="document.getElementById('v1').showModal()">
+                                <img src="Resources/Img/u1.gif" alt="Preview 1" class="video-thumb">
+                                <div class="play-overlay"><span>PLAY</span></div>
+                            </div>
+                            <h3>Por que me purifico</h3>
+                        </td>
+                        <td class="video-card">
+                            <div class="thumb-container" onclick="document.getElementById('v2').showModal()">
+                                <img src="Resources/Img/u2.jpg" alt="Preview 2" class="video-thumb">
+                                <div class="play-overlay"><span>PLAY</span></div>
+                            </div>
+                            <h3>Sigo perdida</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="video-card">
+                            <div class="thumb-container" onclick="document.getElementById('v3').showModal()">
+                                <img src="Resources/Img/u3.jpg" alt="Preview 3" class="video-thumb">
+                                <div class="play-overlay"><span>PLAY</span></div>
+                            </div>
+                            <h3>Mi vida</h3>
+                        </td>
+                        <td class="video-card">
+                            <div class="thumb-container" onclick="document.getElementById('v4').showModal()">
+                                <img src="Resources/Img/u4.gif" alt="Preview 4" class="video-thumb">
+                                <div class="play-overlay"><span>PLAY</span></div>
+                            </div>
+                            <h3>Por que?</h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+      
+        <section id="sonidos">
+            <h2>Libreria sonora</h2>
+
+            <div class="audio-group">
+                <h3>¿Por que estudiar?</h3>
+                <div class="audio-grid">
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/1.jpg" alt="Rain icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Bla..Bla..</p>
+                                <audio controls><source src="Resources/Sonidos/uni 1.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/2.png" alt="Wind icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Obligados a subir</p>
+                                <audio controls><source src="Resources/Sonidos/uni 2.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/3.jpg" alt="Thunder icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Comer es sobrevivir</p>
+                                <audio controls><source src="Resources/Sonidos/uni 3.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+
+            <div class="audio-group">
+                <h3>Bogo-is-trash (bogotrash)</h3>
+                <div class="audio-grid">
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/4.jpg" alt="Bus icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Paren todo, me quiero bajar</p>
+                                <audio controls><source src="Resources/Sonidos/Cuidad 1.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/5.jpg" alt="Car icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Todos pasan</p>
+                                <audio controls><source src="Resources/Sonidos/Cuidad 2.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/6.jpg" alt="Train icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Nadie abre</p>
+                                <audio controls><source src="Resources/Sonidos/Cuidad 3.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+
+            <div class="audio-group">
+                <h3>Tecnologia/vida</h3>
+                <div class="audio-grid">
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/7.jpg" alt="Market icon" class="audio-thumb">
+                            <figcaption>
+                                <p>El ojo</p>
+                                <audio controls><source src="Resources/Sonidos/Tech 1.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/8.jpg" alt="Steps icon" class="audio-thumb">
+                            <figcaption>
+                                <p>El cuerpo</p>
+                                <audio controls><source src="Resources/Sonidos/Tech 2.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/9.jpg" alt="Crowd icon" class="audio-thumb">
+                            <figcaption>
+                                <p>El cerebro</p>
+                                <audio controls><source src="Resources/Sonidos/Tech 3.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+
+            <div class="audio-group">
+                <h3>El cuerpo, la persona</h3>
+                <div class="audio-grid">
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/10.jpg" alt="Glitch icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Duele</p>
+                                <audio controls><source src="Resources/Sonidos/cuerpo 1.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/11.jpg" alt="Synth icon" class="audio-thumb">
+                            <figcaption>
+                                <p>Roto</p>
+                                <audio controls><source src="Resources/Sonidos/cuerpo 2.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <article class="audio-item">
+                        <figure>
+                            <img src="Resources/Img/12.jpg" alt="Beep icon" class="audio-thumb">
+                            <figcaption>
+                                <p>que soy?</p>
+                                <audio controls><source src="Resources/Sonidos/cuerpo 3.m4a.mp4" type="audio/mpeg"></audio>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+
+            <div class="actions" style="text-align: center; margin-top: 40px;">
+                <button class="btn-primary">explora mas contenido</button>
+                <button class="btn-secondary">Agrega contenido</button>
+            </div>
+        </section>
+
+        <aside>
+            <h2>project notes</h2>
+            <p>Se que me exedi en el codigo (Un poco mucho) pero fue por que eran vacaciones y el desparche pega fuerte, igual intente con lo que yo creo que esta organizado el codigo aunque obviamente tengo dudas sobre ciertas cositas </p>
+        </aside>
+
+        <section id="contacto">
+            <h2>Mensajito uwu</h2>
+            <form>
+                <input type="text" placeholder="Nombre del sonido" required>
+                <textarea placeholder="Descripción del contexto..." rows="3"></textarea>
+                <button type="submit" class="btn-primary">agrega sugerencia</button>
+            </form>
+        </section>
+
+        <footer>
+            <p> Apple.Nu © 2026</p>
+        </footer>
+    </main>
+
+    <dialog id="v1" class="video-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="document.getElementById('v1').close()">×</button>
+            <h3>01. Quema de vibras</h3>
+            <video controls><source src="Resources/Video/Objeto.mp4" type="video/mp4"></video>
+        </div>
+    </dialog>
+
+    <dialog id="v2" class="video-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="document.getElementById('v2').close()">×</button>
+            <h3>02. Pura lancha</h3>
+            <video controls><source src="Resources/Video/Recorrido.mp4" type="video/mp4"></video>
+        </div>
+    </dialog>
+
+    <dialog id="v3" class="video-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="document.getElementById('v3').close()">×</button>
+            <h3>03. Amiguitos</h3>
+            <video controls><source src="Resources/Video/Escena.mp4" type="video/mp4"></video>
+        </div>
+    </dialog>
+
+    <dialog id="v4" class="video-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="document.getElementById('v4').close()">×</button>
+            <h3>04. Vaca</h3>
+            <video controls><source src="Resources/Video/nomeacuerdo.mp4" type="video/mp4"></video>
+        </div>
+    </dialog>
+
+</body>
+</html>
