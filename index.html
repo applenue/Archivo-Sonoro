@@ -8,253 +8,512 @@
 </head>
 <body>
 
-    <main>
-        <header>
-            <div class="header-content">
-                <div class="logo">Archivo<span>Sonoro</span></div>
-            <nav class="menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#videos">Galería</a>
-                <a href="#sonidos">Sonidos</a>
-                <a href="#contacto">Sugerir</a>
-            </nav>
+    <div class="tab-system">
+        <input type="radio" id="tab-inicio" name="nav-tabs" checked>
+        <input type="radio" id="tab-ueb" name="nav-tabs">
+        <input type="radio" id="tab-tech" name="nav-tabs">
+        <input type="radio" id="tab-cuerpo" name="nav-tabs">
+        <input type="radio" id="tab-ciudad" name="nav-tabs">
+        <input type="radio" id="tab-publicar" name="nav-tabs">
+
+        <header class="main-header">
+            <div class="header-top">
+                <div class="logo">A<span>S</span></div>
+                <nav class="tab-labels">
+                    <label for="tab-inicio" class="tab-label">Inicio</label>
+                    <label for="tab-ueb" class="tab-label">UEB</label>
+                    <label for="tab-tech" class="tab-label">Tech</label>
+                    <label for="tab-cuerpo" class="tab-label">Cuerpo</label>
+                    <label for="tab-ciudad" class="tab-label">Ciudad</label>
+                    <label for="tab-publicar" class="tab-label">Publicar</label>
+                </nav>
             </div>
-            <h1 id="inicio">ARCHIVO<br>SONORO</h1>
-            <p>Un archivo sonoro diseñado para capturar la esencia de la querida BogoTrash.</p>
         </header>
 
-        <section id="videos">
-            <h2>Galeria de videos</h2>
-            <table class="video-table">
-                <tbody>
-                    <tr>
-                        <td class="video-card">
-                            <div class="thumb-container" onclick="document.getElementById('v1').showModal()">
-                                <img src="Resources/Img/u1.gif" alt="Preview 1" class="video-thumb">
-                                <div class="play-overlay"><span>PLAY</span></div>
-                            </div>
-                            <h3>Por que me purifico</h3>
-                        </td>
-                        <td class="video-card">
-                            <div class="thumb-container" onclick="document.getElementById('v2').showModal()">
-                                <img src="Resources/Img/u2.jpg" alt="Preview 2" class="video-thumb">
-                                <div class="play-overlay"><span>PLAY</span></div>
-                            </div>
-                            <h3>Sigo perdida</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="video-card">
-                            <div class="thumb-container" onclick="document.getElementById('v3').showModal()">
-                                <img src="Resources/Img/u3.jpg" alt="Preview 3" class="video-thumb">
-                                <div class="play-overlay"><span>PLAY</span></div>
-                            </div>
-                            <h3>Mi vida</h3>
-                        </td>
-                        <td class="video-card">
-                            <div class="thumb-container" onclick="document.getElementById('v4').showModal()">
-                                <img src="Resources/Img/u4.gif" alt="Preview 4" class="video-thumb">
-                                <div class="play-overlay"><span>PLAY</span></div>
-                            </div>
-                            <h3>Por que?</h3>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-      
-        <section id="sonidos">
-            <h2>Libreria sonora</h2>
-
-            <div class="audio-group">
-                <h3>¿Por que estudiar?</h3>
-                <div class="audio-grid">
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/1.jpg" alt="Rain icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Bla..Bla..</p>
-                                <audio controls><source src="Resources/Sonidos/uni 1.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/2.png" alt="Wind icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Obligados a subir</p>
-                                <audio controls><source src="Resources/Sonidos/uni 2.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/3.jpg" alt="Thunder icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Comer es sobrevivir</p>
-                                <audio controls><source src="Resources/Sonidos/uni 3.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
+        <main class="tab-content" id="content-inicio">
+            <section class="hero-section">
+                <h1 class="main-title">La identidad<br>dentro del sonido</h1>
+                <p class="subtitle">Un archivo sonoro de la construcción de la identidad y la esencia de la vida en sí.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar en el ruido ambiental..." disabled>
                 </div>
-            </div>
-
-            <div class="audio-group">
-                <h3>Bogo-is-trash (bogotrash)</h3>
-                <div class="audio-grid">
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/4.jpg" alt="Bus icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Paren todo, me quiero bajar</p>
-                                <audio controls><source src="Resources/Sonidos/Cuidad 1.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/5.jpg" alt="Car icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Todos pasan</p>
-                                <audio controls><source src="Resources/Sonidos/Cuidad 2.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/6.jpg" alt="Train icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Nadie abre</p>
-                                <audio controls><source src="Resources/Sonidos/Cuidad 3.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
+            </section>
+ 
+            <section id="videos" class="editorial-block">
+                <div class="block-header">
+                    <h2>Metrajes del auto-descubrimiento</h2>
+                    <p>Es un archivo de videos que van guiando el camino a entender de dónde proviene la identidad.</p>
                 </div>
-            </div>
 
-            <div class="audio-group">
-                <h3>Tecnologia/vida</h3>
-                <div class="audio-grid">
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/7.jpg" alt="Market icon" class="audio-thumb">
-                            <figcaption>
-                                <p>El ojo</p>
-                                <audio controls><source src="Resources/Sonidos/Tech 1.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/8.jpg" alt="Steps icon" class="audio-thumb">
-                            <figcaption>
-                                <p>El cuerpo</p>
-                                <audio controls><source src="Resources/Sonidos/Tech 2.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/9.jpg" alt="Crowd icon" class="audio-thumb">
-                            <figcaption>
-                                <p>El cerebro</p>
-                                <audio controls><source src="Resources/Sonidos/Tech 3.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
+                <div class="featured-carousel">
+                    <button class="nav-arrow left" onclick="cambiarVideo(-1)">✦</button>
+                    
+                    <div class="carousel-window">
+                        <article class="main-video-card video-slide active">
+                            <div class="video-preview-wrapper" onclick="document.getElementById('v1').showModal()">
+                                <video class="preview-thumb" src="Resources/Video/Escenaa.mp4" poster="Resources/Img/1.jpg" muted loop playsinline></video>
+                                <div class="play-overlay"><span>PLAY ARCHIVE</span></div>
+                            </div>
+                            <div class="video-info">
+                                <h3>El caos en el pecho</h3>
+                                <h4>Donde el cielo se fragmenta</h4>
+                                <p class="lyric-quote">Los pájaros están enloqueciendo...</p>
+                                <p class="description">A veces me siento así: como un estallido que no sabe dónde aterrizar. Miro hacia arriba y el ruido me pertenece; es esa ansiedad de querer estar en todas partes...</p>
+                                <div class="card-footer-actions">
+                                    <button class="icon-btn">⇄</button>
+                                    <button class="icon-btn">💬</button>
+                                    <button class="icon-btn">⬇</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="main-video-card video-slide">
+                            <div class="video-preview-wrapper" onclick="document.getElementById('v2').showModal()">
+                                <video class="preview-thumb" src="Resources/Video/Objeto.mp4" poster="Resources/Img/2.jpg" muted loop playsinline></video>
+                                <div class="play-overlay"><span>PLAY ARCHIVE</span></div>
+                            </div>
+                            <div class="video-info">
+                                <h3>No pares</h3>
+                                <h4>Vuela</h4>
+                                <p class="lyric-quote">La vulnerabilidad de nosotros</p>
+                                <p class="description">Encontré la belleza posada sobre la piedra fría, un estallido de naranja que contrastaba con el gris del camino...</p>
+                                <div class="card-footer-actions">
+                                    <button class="icon-btn">⇄</button>
+                                    <button class="icon-btn">💬</button>
+                                    <button class="icon-btn">⬇</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="main-video-card video-slide">
+                            <div class="video-preview-wrapper" onclick="document.getElementById('v3').showModal()">
+                                <video class="preview-thumb" src="Resources/Video/Recorrido.mp4" poster="Resources/Img/3.jpg" muted loop playsinline></video>
+                                <div class="play-overlay"><span>PLAY ARCHIVE</span></div>
+                            </div>
+                            <div class="video-info">
+                                <h3>El eco de la madera</h3>
+                                <h4>Donde el agua dicta el pulso</h4>
+                                <p class="lyric-quote">Creo que esta lancha se hundirá bajo el peso de mi ser.</p>
+                                <p class="description">El golpe del agua contra la tabla me recuerda que estoy hecho de transiciones. No hay tierra firme bajo mis pies...</p>
+                                <div class="card-footer-actions">
+                                    <button class="icon-btn">⇄</button>
+                                    <button class="icon-btn">💬</button>
+                                    <button class="icon-btn">⬇</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="main-video-card video-slide">
+                            <div class="video-preview-wrapper" onclick="document.getElementById('v4').showModal()">
+                                <video class="preview-thumb" src="Resources/Video/Gesto.mp4" poster="Resources/Img/4.jpg" muted loop playsinline></video>
+                                <div class="play-overlay"><span>PLAY ARCHIVE</span></div>
+                            </div>
+                            <div class="video-info">
+                                <h3>Por qué?</h3>
+                                <h4>Estática constante</h4>
+                                <p class="lyric-quote">¿Por qué purificar lo que ya nació roto?</p>
+                                <p class="description">Un eco de gestos antiguos que se repiten hasta volverse presente. Al girar la manivela, el sonido metálico me susurra el infinito.</p>
+                                <div class="card-footer-actions">
+                                    <button class="icon-btn">⇄</button>
+                                    <button class="icon-btn">💬</button>
+                                    <button class="icon-btn">⬇</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <button class="nav-arrow right" onclick="cambiarVideo(1)">✦</button>
                 </div>
-            </div>
+            </section>
+        </main>
 
-            <div class="audio-group">
-                <h3>El cuerpo, la persona</h3>
-                <div class="audio-grid">
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/10.jpg" alt="Glitch icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Duele</p>
-                                <audio controls><source src="Resources/Sonidos/cuerpo 1.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/11.jpg" alt="Synth icon" class="audio-thumb">
-                            <figcaption>
-                                <p>Roto</p>
-                                <audio controls><source src="Resources/Sonidos/cuerpo 2.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    <article class="audio-item">
-                        <figure>
-                            <img src="Resources/Img/12.jpg" alt="Beep icon" class="audio-thumb">
-                            <figcaption>
-                                <p>que soy?</p>
-                                <audio controls><source src="Resources/Sonidos/cuerpo 3.m4a.mp4" type="audio/mpeg"></audio>
-                            </figcaption>
-                        </figure>
-                    </article>
+        <main class="tab-content" id="content-ueb">
+            <section class="editorial-block">
+                <div class="block-header">
+                    <h2>UEB</h2>
+                    <p>Una selección de los fragmentos con mayor resonancia y reconocimiento comunitario.</p>
                 </div>
-            </div>
 
-            <div class="actions" style="text-align: center; margin-top: 40px;">
-                <button class="btn-primary">explora mas contenido</button>
-                <button class="btn-secondary">Agrega contenido</button>
-            </div>
-        </section>
+                <div class="brutalist-grid">
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">A</div><div><span class="username">@Chrisg</span><span class="timestamp">Hace 2 horas</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/5.jpg" alt="Residuo de luz"></div>
+                        <div class="card-body">
+                            <h3>El residuo de la luz</h3>
+                            <p class="highlight">El contraste es demasiado alto.</p>
+                            <p>Soy una búsqueda constante de altura construida sobre cimientos que no elegí, pero que definen cada uno de mis contornos.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/uni 1.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
 
-        <aside>
-            <h2>project notes</h2>
-            <p>Se que me exedi en el codigo (Un poco mucho) pero fue por que eran vacaciones y el desparche pega fuerte, igual intente con lo que yo creo que esta organizado el codigo aunque obviamente tengo dudas sobre ciertas cositas </p>
-        </aside>
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">A</div><div><span class="username">@MLegans</span><span class="timestamp">Hace 24 horas</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/6.jpg" alt="Rastro metálico"></div>
+                        <div class="card-body">
+                            <h3>La memoria metálica</h3>
+                            <p class="highlight">Reconozco..</p>
+                            <p>Escucho el parpadeo lento, casi sonoro, y entiendo que mi identidad es esta vigilancia constante sobre mi propia autenticidad.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Uni 2.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
 
-        <section id="contacto">
-            <h2>Mensajito uwu</h2>
-            <form>
-                <input type="text" placeholder="Nombre del sonido" required>
-                <textarea placeholder="Descripción del contexto..." rows="3"></textarea>
-                <button type="submit" class="btn-primary">agrega sugerencia</button>
-            </form>
-        </section>
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">A</div><div><span class="username">@Apple</span><span class="timestamp">Hace 3 días</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/7.jpg" alt="Resonancia"></div>
+                        <div class="card-body">
+                            <h3>Resonancia</h3>
+                            <p class="highlight">Mi voz atrapada</p>
+                            <p>Escucho la estática de esta imagen y reconozco que soy ese rastro brillante y efímero que persiste cuando todo lo demás se ha apagado.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Uni 3.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
 
-        <footer>
-            <p> Apple.Nu © 2026</p>
+                </div>
+            </section>
+        </main>
+
+        <main class="tab-content" id="content-tech">
+            <section class="editorial-block">
+                <div class="block-header">
+                    <h2>Tech</h2>
+                    <p>Exploración analítica de la maquinaria urbana y los entornos automatizados.</p>
+                </div>
+
+                <div class="brutalist-grid">
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">T</div><div><span class="username">@TechArchive</span><span class="timestamp">Sección A</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/2.jpg" alt="Frecuencia Mecánica"></div>
+                        <div class="card-body">
+                            <h3>La frecuencia del arraigo</h3>
+                            <p class="highlight">Donde el ruido se vuelve refugio.</p>
+                            <p>Escucho el crujido del aire y reconozco mi propio desorden. No es solo ruido ambiente; es la textura de mi pensamiento.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Tech 1.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">T</div><div><span class="username">@Industrial</span><span class="timestamp">Sección B</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/3.jpg" alt="Mecánica"></div>
+                        <div class="card-body">
+                            <h3>Sistemas Secuenciales</h3>
+                            <p class="highlight">Ritmo constante.</p>
+                            <p>Engranajes metálicos que componen una sinfonía gris. El sonido del metal chocando se convierte en nuestra segunda lengua.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Tech 2.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">T</div><div><span class="username">@Sintetizador</span><span class="timestamp">Sección C</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/4.jpg" alt="Ondas"></div>
+                        <div class="card-body">
+                            <h3>Ondas Artificiales</h3>
+                            <p class="highlight">Anulando el vacío.</p>
+                            <p>Frecuencias sintéticas diseñadas para llenar el espacio donde la naturaleza ya no puede emitir sus ecos biológicos habituales.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/tech 3.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <main class="tab-content" id="content-cuerpo">
+            <section class="editorial-block">
+                <div class="block-header">
+                    <h2>Registros e Introspección | Cuerpo</h2>
+                    <p>El sonido visceral de los latidos, respiraciones y la memoria biológica física.</p>
+                </div>
+
+                <div class="brutalist-grid">
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">C</div><div><span class="username">@AnatomiaS</span><span class="timestamp">Pulso 1</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/4.jpg" alt="Anatomía Orgánica"></div>
+                        <div class="card-body">
+                            <h3>Fragmentos del Suburbio</h3>
+                            <p class="highlight">Mi introspección física.</p>
+                            <p>Hay sonidos que solo se escuchan cuando te quedas a solas con tu propia historia. Este audio es el rastro que rebota en los músculos.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/cuerpo 1.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">C</div><div><span class="username">@Biometric</span><span class="timestamp">Pulso 2</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/6.jpg" alt="Respiración"></div>
+                        <div class="card-body">
+                            <h3>La caja del pecho</h3>
+                            <p class="highlight">Tensión muscular.</p>
+                            <p>Siento cada músculo de mi cuerpo tensarse al seguir el compás rítmico y sofocante de la respiración contenida.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Cuerpo 2.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">C</div><div><span class="username">@Organico</span><span class="timestamp">Pulso 3</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/1.jpg" alt="Pulso Cardíaco"></div>
+                        <div class="card-body">
+                            <h3>Resonancia de la Sangre</h3>
+                            <p class="highlight">Ritmos cardíacos alternos.</p>
+                            <p>El latido como el primer metrónomo de la existencia. Una pieza sonora cruda que expone la fragilidad de nuestra carne.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/cuerpo 3.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <main class="tab-content" id="content-ciudad">
+            <section class="editorial-block">
+                <div class="block-header">
+                    <h2>Ciudad</h2>
+                    <p>Interferencias necesarias en la frecuencia monótona y caótica del espacio público.</p>
+                </div>
+
+                <div class="brutalist-grid">
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">X</div><div><span class="username">@UrbeEstática</span><span class="timestamp">Bloque Norte</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/7.jpg" alt="Paisajes de Asfalto"></div>
+                        <div class="card-body">
+                            <h3>Rastro de Estática</h3>
+                            <p class="highlight">La interferencia como resistencia.</p>
+                            <p>Escucho la estática de esta imagen y reconozco que soy ese rastro brillante y efímero que persiste cuando todo se apaga en la urbe.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Cuidad 1.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">X</div><div><span class="username">@Subterraneo</span><span class="timestamp">Bloque Sur</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/3.jpg" alt="Tránsito"></div>
+                        <div class="card-body">
+                            <h3>Ecos del Asfalto</h3>
+                            <p class="highlight">Pasajeros del ruido.</p>
+                            <p>El murmullo interminable de los motores y los pasos perdidos en las estaciones de tránsito rápido a las seis de la tarde.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Cuidad 2.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feed-card">
+                        <div class="card-user"><div class="avatar">X</div><div><span class="username">@Periferia</span><span class="timestamp">Bloque Este</span></div></div>
+                        <div class="card-media-box"><img src="Resources/Img/5.jpg" alt="Sirenas"></div>
+                        <div class="card-body">
+                            <h3>Alarma Social</h3>
+                            <p class="highlight">Señales acústicas críticas.</p>
+                            <p>Sirenas distantes cruzando la cuadrícula urbana, alterando las ondas del vecindario y rompiendo el silencio artificial.</p>
+                            <div class="brutalist-player">
+                                <audio class="audio-element" src="Resources/Sonidos/Cuidad 3.m4a.mp4"></audio>
+                                <button class="play-trigger">▶ PLAY</button>
+                                <div class="timeline-container"><div class="timeline-progress"></div></div>
+                                <span class="time-display">0:00</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <main class="tab-content" id="content-publicar">
+            <section class="editorial-block">
+                <div class="block-header">
+                    <h2>Consola de Aportes al Archivo</h2>
+                    <p>Inyecta un nuevo rastro, fragmento de audio o metraje a la base de datos de identidad.</p>
+                </div>
+
+                <div class="publish-container">
+                    <form class="brutalist-form" onsubmit="event.preventDefault(); alert('Fragmento enviado al archivo con éxito.');">
+                        <div class="form-group">
+                            <label class="form-label">Identificador / Pseudónimo</label>
+                            <input type="text" class="form-input" placeholder="Ej: @Applempie" required>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label class="form-label">Categoría del Rastro</label>
+                                <select class="form-input">
+                                    <option value="ueb">UEB</option>
+                                    <option value="tech">Tech</option>
+                                    <option value="cuerpo">Cuerpo</option>
+                                    <option value="ciudad">Ciudad</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Archivo de Audio</label>
+                                <input type="file" class="form-input file-input" accept="audio/*">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Título del Paisaje Sonoro</label>
+                            <input type="text" class="form-input" placeholder="¿Qué nombre dicta la frecuencia?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Línea de Enfoque</label>
+                            <input type="text" class="form-input" placeholder="Una frase corta que defina el impacto...">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Cuerpo de la Introspección</label>
+                            <textarea class="form-input form-textarea" rows="5" placeholder="Describe la textura de tu pensamiento..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">PUBLICAR EN EL ARCHIVO ✦</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <dialog id="v1" class="video-modal"><div class="modal-content"><button class="close-btn" onclick="document.getElementById('v1').close()">×</button><h3>01. El caos en el pecho</h3><video controls src="Resources/Video/Escenaa.mp4"></video></div></dialog>
+        <dialog id="v2" class="video-modal"><div class="modal-content"><button class="close-btn" onclick="document.getElementById('v2').close()">×</button><h3>02. No pares, vuela</h3><video controls src="Resources/Video/Objeto.mp4"></video></div></dialog>
+        <dialog id="v3" class="video-modal"><div class="modal-content"><button class="close-btn" onclick="document.getElementById('v3').close()">×</button><h3>03. El eco de la madera</h3><video controls src="Resources/Video/Recorrido.mp4"></video></div></dialog>
+        <dialog id="v4" class="video-modal"><div class="modal-content"><button class="close-btn" onclick="document.getElementById('v4').close()">×</button><h3>04. Por qué?</h3><video controls src="Resources/Video/Gesto.mp4"></video></div></dialog>
+
+        <footer class="global-footer">
+            <p>Apple.Nu © 2026 | Diseñado por Manuela Posada</p>
         </footer>
-    </main>
+    </div>
 
-    <dialog id="v1" class="video-modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="document.getElementById('v1').close()">×</button>
-            <h3>01. Quema de vibras</h3>
-            <video controls><source src="Resources/Video/Objeto.mp4" type="video/mp4"></video>
-        </div>
-    </dialog>
+    <script>
+        let slideActual = 0;
+        const slides = document.querySelectorAll('.video-slide');
 
-    <dialog id="v2" class="video-modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="document.getElementById('v2').close()">×</button>
-            <h3>02. Pura lancha</h3>
-            <video controls><source src="Resources/Video/Recorrido.mp4" type="video/mp4"></video>
-        </div>
-    </dialog>
+        function cambiarVideo(direccion) {
+            if(slides.length === 0) return;
+            slides[slideActual].classList.remove('active');
+            slideActual = (slideActual + direccion + slides.length) % slides.length;
+            slides[slideActual].classList.add('active');
+        }
 
-    <dialog id="v3" class="video-modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="document.getElementById('v3').close()">×</button>
-            <h3>03. Amiguitos</h3>
-            <video controls><source src="Resources/Video/Escena.mp4" type="video/mp4"></video>
-        </div>
-    </dialog>
+        document.addEventListener("DOMContentLoaded", () => {
+            const players = document.querySelectorAll('.brutalist-player');
 
-    <dialog id="v4" class="video-modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="document.getElementById('v4').close()">×</button>
-            <h3>04. Vaca</h3>
-            <video controls><source src="Resources/Video/nomeacuerdo.mp4" type="video/mp4"></video>
-        </div>
-    </dialog>
+            players.forEach(player => {
+                const audio = player.querySelector('.audio-element');
+                const btnPlay = player.querySelector('.play-trigger');
+                const progressFill = player.querySelector('.timeline-progress');
+                const timeline = player.querySelector('.timeline-container');
+                const timeDisplay = player.querySelector('.time-display');
 
+                if (!audio || !btnPlay) return;
+                btnPlay.textContent = '▶ PLAY';
+
+                btnPlay.addEventListener('click', () => {
+                    document.querySelectorAll('.audio-element').forEach(otherAudio => {
+                        if (otherAudio !== audio) {
+                            otherAudio.pause();
+                            const otherBtn = otherAudio.closest('.brutalist-player')?.querySelector('.play-trigger');
+                            if (otherBtn) otherBtn.textContent = '▶ PLAY';
+                        }
+                    });
+
+                    if (audio.paused) {
+                        audio.play();
+                        btnPlay.textContent = '⏸ PAUSE';
+                    } else {
+                        audio.pause();
+                        btnPlay.textContent = '▶ PLAY';
+                    }
+                });
+
+                audio.addEventListener('timeupdate', () => {
+                    if (audio.duration) {
+                        const percent = (audio.currentTime / audio.duration) * 100;
+                        if (progressFill) progressFill.style.width = `${percent}%`;
+                        if (timeDisplay) timeDisplay.textContent = formatTime(audio.currentTime);
+                    }
+                });
+
+                if (timeline) {
+                    timeline.addEventListener('click', (e) => {
+                        const rect = timeline.getBoundingClientRect();
+                        const clickX = e.clientX - rect.left;
+                        const widthTotal = rect.width;
+                        if (audio.duration) {
+                            audio.currentTime = (clickX / widthTotal) * audio.duration;
+                        }
+                    });
+                }
+
+                audio.addEventListener('ended', () => {
+                    btnPlay.textContent = '▶ PLAY';
+                    if (progressFill) progressFill.style.width = '0%';
+                    if (timeDisplay) timeDisplay.textContent = '0:00';
+                });
+            });
+
+            function formatTime(seconds) {
+                if (isNaN(seconds)) return "0:00";
+                const min = Math.floor(seconds / 60);
+                const seg = Math.floor(seconds % 60);
+                return `${min}:${seg < 10 ? '0' : ''}${seg}`;
+            }
+
+            document.querySelectorAll('.video-preview-wrapper').forEach(wrapper => {
+                const video = wrapper.querySelector('video');
+                if(video) {
+                    wrapper.addEventListener('mouseenter', () => video.play().catch(()=>{}));
+                    wrapper.addEventListener('mouseleave', () => {
+                        video.pause();
+                        video.currentTime = 0;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
